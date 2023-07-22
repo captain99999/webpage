@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>This is my first webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+
+        header {
+            background-color: #3814ad;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .wrap {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #865e16;
+            color: #e4e2e8;
+            padding: 20px;
+            margin: 10px;
+            flex-basis: 300px;
+        }
+
+        /* Media queries */
+        @media screen and (max-width: 768px) {
+            main {
+                justify-content: center;
+            }
+
+            .item {
+                flex-basis: 100%;
+            }
+        }
+        .img
+        {
+            float: right;
+        }
+        .content{
+            display: flex;
+            padding: 2rem 3.5rem;
+            justify-content: space-evenly;
+        }
+        .content img{
+            padding: 0.9rem 1.5rem;
+            border-radius: 20%;
+        }
+        #link a{
+            text-decoration: none;
+            color: #fff
+        }
+        #link a:hover{
+            color:aquamarine;
+            /* font-size: 1.5rem; */
+            /* transition: 0.5s ease; */
+        }
+    </style>
 </head>
 <body>
-    <h1>This is heading.</h1>
+    <header>
+        <h1>Manish Aditiya Gupta</h1>
+    </header>
+    <main>
+        <div class="wrap">
+
+            <div class="item">Home</div>
+            <div class="item">Main Menu</div>
+            <div class="item" id="link"><a href="https://github.com/captain99999">Git hub</a></div>
+        </div>
+        <div class="content">
+            <img class="img" src="manish.jpg" alt ="Profile pic" height ="250">
+            <p> Hello everyone! I am Manish Aditiya Gupta,an Electronics and Communication engineering student in Sir Mvit. Here I am presenting my very first web page! Created using HTML and CSS. Excited to embark on this coding journey and explore the endless possibilities of web development! I am incredibly grateful for this learning experience, and it's only the beginning! My first web page might be a stepping stone, but it represents the foundation of my passion for web development, which I plan to build upon with further learning and exploration. The potential to create meaningful web applications, interactive interfaces, and transformative user experiences is limitless, and I can't wait to dive deeper into the vast ocean of possibilities!  </p>
+        </div>
+    </main>
 </body>
 </html>
